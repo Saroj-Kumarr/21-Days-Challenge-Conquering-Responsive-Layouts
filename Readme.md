@@ -1,7 +1,7 @@
 # Conquering Responsive Layout Course By : Kevin Powell
 
 
-## Day 01 *****************************************************
+## Day 01
 
 1. Every elements in the HTML are by defaults response.
 2. Never use value in pixels.
@@ -11,7 +11,9 @@
 6. if you are giving padding and margin then try to give it is in em (depend on the parent container) or rem (depend on the body).
  By default 1 em or rem = 16px 
 
-## Day 02 ******************************************************
+
+
+## Day 02
 
 rem and em are both CSS units that are relative to the font size of an element. However, they have different behaviors and use cases.
 
@@ -61,4 +63,30 @@ Examples :
 }
 
 
-## Day 03 ******************************************************
+## Day 03
+
+min-width 
+
+Specifies the minimum width that an element can have.
+If the content within the element requires more space than the specified minimum width, the element will expand to accommodate it.
+Useful for ensuring that elements have a minimum size to prevent content from becoming unreadable or overlapping.
+Applied to block-level and replaced elements like divs, images, and tables.
+
+Example:
+
+.container {
+    min-width: 300px; /* Ensure container has at least 300 pixels width */
+}
+
+
+max-width
+
+Specifies the maximum width that an element can have.
+If the content within the element would exceed the specified maximum width, the element will shrink to fit within this constraint.
+Useful for creating responsive designs by limiting the maximum width of elements on larger screens, preventing them from becoming too wide.
+Applied to block-level and replaced elements like divs, images, and tables.
+Example:
+
+.container {
+    max-width: 800px; /* Ensure container does not exceed 800 pixels width */
+}
